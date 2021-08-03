@@ -6,7 +6,7 @@ import mindustry.ctype.*;
 import mindustry.type.*;
 
 public class ShopItems implements ContentList {
-    public ShopItem bundle1, bundle2, bundle3;
+    public ShopItem bundle1, bundle2, bundle3, bundle4;
 
     @Override
     public void load(){
@@ -20,6 +20,10 @@ public class ShopItems implements ContentList {
 
         bundle3 = new ShopItem("meltdown-bundle", 4000){{
             bundleItems = ItemStack.with(Items.copper, 1200, Items.lead, 350, Items.graphite, 300, Items.silicon, 325, Items.surgeAlloy, 325);
+        }};
+
+        bundle4 = new ShopItem("minidriller-bundle", 1500){{
+            bundleItems = ItemStack.with(Items.copper, 150, Items.lead, 150, Items.graphite, 250, Items.titanium, 100, Items.silicon, 150);
         }};
     }
 }
