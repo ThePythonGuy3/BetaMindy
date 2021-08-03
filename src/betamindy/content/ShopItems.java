@@ -20,7 +20,7 @@ public class ShopItems implements ContentList {
             bundleItems = ItemStack.with(Items.silicon, 1000, Items.graphite, 1000);
         }};
 
-        bundle3 = newShopItem("meltdown-bundle", 4000){{
+        bundle3 = new ShopItem("meltdown-bundle", 4000){{
             bundleItems = ItemStack.with(Items.copper, 1200, Items.lead, 350, Items.graphite, 300, Items.silicon, 325, Items.surgeAlloy, 325);
         }};
 
